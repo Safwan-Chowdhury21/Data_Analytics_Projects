@@ -1,0 +1,91 @@
+# 💼 ValuEdge – A Streamlit-Powered DCF Valuation Web App
+
+ValuEdge is a web-based Discounted Cash Flow (DCF) valuation tool built with Python and Streamlit. It allows users to interactively model a company’s financial future, test valuation scenarios, and instantly export the results into a clean, structured Excel report.
+
+---
+
+## 🧠 What This App Does
+
+✅ Enables interactive financial modeling using DCF  
+✅ Runs **Base**, **Bull**, and **Bear** case scenarios  
+✅ Calculates:
+- Revenue forecasts
+- Free Cash Flows (FCFs)
+- Terminal Value
+- Net Present Value (NPV)
+- Total Enterprise Value
+
+✅ Visually compares valuation outcomes across scenarios  
+✅ Exports a polished **multi-sheet Excel report** with tables, assumptions, and charts
+
+---
+
+## 🚀 How It Works (Functionally)
+
+1. **User inputs assumptions** via sliders:
+   - Revenue growth rate
+   - Free cash flow (FCF) margin
+   - Discount rate (WACC)
+   - Terminal growth rate
+   - Forecast period
+
+2. **DCF logic runs in the backend**:
+   - Projects future revenue and FCFs
+   - Discounts cash flows to present value
+   - Computes terminal value using Gordon Growth Model
+   - Sums all to estimate Enterprise Value
+
+3. **Visuals + Export**:
+   - Displays forecast table
+   - Generates valuation comparison chart
+   - Offers 1-click Excel download (with forecasts, summary, and chart)
+
+---
+
+## 🖥️ How It Works (Technically)
+
+- Built with `Streamlit` for the interactive UI
+- Uses `Pandas` and `NumPy` for financial computation
+- Uses `Matplotlib` to generate valuation charts
+- Uses `XlsxWriter` to generate a multi-sheet Excel report with:
+  - Scenario comparison
+  - Forecasts per case
+  - Embedded bar chart image
+
+---
+
+## 🔍 Why This App Is Useful
+
+- No need to use Excel formulas or templates
+- Lets you **test scenarios instantly**
+- Gives **clean outputs** you can submit, present, or store
+- Ideal for finance students, analysts, and startup valuation
+
+---
+
+## 📦 App Output Example
+
+✅ Excel file includes:
+- Sheet 1: Valuation Summary (Base, Bull, Bear)
+- Sheet 2–4: Year-by-year Forecast Tables
+- Sheet 5: Enterprise Value Chart
+
+✅ Streamlit app displays:
+- Forecast table preview
+- Bar chart comparison of valuations
+- Download button for Excel report
+
+---
+
+## 🧰 Tools Used
+
+| Tech           | Purpose                     |
+|----------------|-----------------------------|
+| `Python`       | Financial logic and backend |
+| `Streamlit`    | Interactive web UI          |
+| `Pandas`       | Forecast modeling           |
+| `XlsxWriter`   | Excel automation            |
+| `Matplotlib`   | Bar charts and visuals      |
+
+---
+
